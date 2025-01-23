@@ -36,13 +36,24 @@
 	<div class="main">
 		<div class="main__container">
 			<div class="main__content">
-				<h1>Hello! I'm Nasser Alnabulsi, I am a</h1>
+				<h1>Hello! I'm Nasser Alnabulsi</h1>
 				<div class "container">
-					<div class="typed-out">Software Developer</div></div>
+					<h2> I'm a <span class = "auto-type"></span></h2>
+				</div>
 			</div>
 		</div>
 	</div>
-	
+	<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 	<script src="app.js"></script>
+
+	<script>
+		var typed = new Typed(".auto-type",{
+			strings: ["Software Developer","Foodie","Learner"],
+			typeSpeed: 50,
+			backSpeed: 10,
+			loop:false
+		})
+
+	</script>
 </body>
 </html>
