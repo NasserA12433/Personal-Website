@@ -251,6 +251,11 @@ body{
 
 .hyperlinks{
 	color: #fff;
+	justify-content: center;
+	display:flex;
+	gap:1rem;
+
+
 }
 @keyframes fadeIn {
 	0% {opacity: 0;}
