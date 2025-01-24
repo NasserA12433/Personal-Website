@@ -228,6 +228,7 @@ body{
 
 	grid-auto-rows: var(--row-height);
 	gap:var(--gap);
+	animation: fadeIn 5s;
 }
 
 .image-grid > img {
@@ -250,4 +251,8 @@ body{
 
 .hyperlinks{
 	color: #fff;
+}
+@keyframes fadeIn {
+	0% {opacity: 0;}
+	100%{opacity: 1;}
 }
