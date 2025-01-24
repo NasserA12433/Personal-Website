@@ -122,6 +122,7 @@
 		z-index:99;
 		height: 50vh;
 		font-size:1.6rem;
+		position:flex;
 	}
 	#navbar__logo{
 		padding-left:25px;
@@ -147,7 +148,7 @@
 	}
 
 	#mobile-menu{
-		position:absolute;
+		position:center;
 		top:20%;
 		right:5%;
 		transform: translate(5%,20%);
