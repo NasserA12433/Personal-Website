@@ -65,6 +65,8 @@ body{
 	background-color: #bed0eb;
 	box-shadow: 0 0 5px rgba(0,0,0,0.5);
 	border-radius: 5px;
+	transform: translateX(400%);
+	transition: all 0.5s ease-in-out;
 
 }
 
@@ -96,6 +98,12 @@ body{
 }
 #timeline ul li:nth-child(even) .box{
 	left: -500px;
+	translate: translateX(-400%);
+}
+
+#timeline ul li .box.show{
+	transform: translateX(0%);
+	transition: all 0.5s ease-in-out;
 }
 
 #timeline ul li i{
@@ -120,14 +128,39 @@ body{
 	content:"";
 	position: absolute;
 	top: 5px;
-	width: 0;
-	right: 0;
+	width: 0px;
+	right: 0px;
 	border-style:solid;
 
 }
 
 #timeline ul li:nth-child(odd) .box:before{
-	left:15px;
+	left:-15px;
 	border-width: 8px 16px 8px 0;
 	border-color: transparent #18486e;
+}
+#timeline ul li:nth-child(even) .box:before{
+	right:-15px;
+	border-width: 8px 0px 8px 16px;
+	border-color: transparent #18486e;
+}
+
+@media (max-width:768px) {
+	#timeline ul li {
+		margin-left:30px;
+	}
+
+	#timeline ul li .box{
+		width:calc(100vw -90px);
+	}
+
+	#timeline ul li:nth-child(even) .box{
+		left: 40px;
+	}
+
+	#timeilne ul li:nth-child(even) .box:before{
+		left: -15px;
+		border-width: 8px 16px 8px 0px;
+		border-color: transparent #18486e;
+	}
 }
