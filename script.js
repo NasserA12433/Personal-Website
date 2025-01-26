@@ -1,4 +1,4 @@
-"use strict"
+/*Box interaction and movement */
 
 const boxes=document.querySelectorAll('.box');
 
@@ -20,6 +20,9 @@ function DisplayContent(){
     })
 }
 
+
+
+/*Navbar function and behavior*/
 const menu = document.querySelector('#mobile-menu')
 const menuLinks = document.querySelector('.navbar__menu')
 
