@@ -122,7 +122,7 @@
 		z-index:99;
 		height: 50vh;
 		font-size:1.6rem;
-		position:flex;
+		position: flex;
 	}
 	#navbar__logo{
 		padding-left:25px;
@@ -148,7 +148,7 @@
 	}
 
 	#mobile-menu{
-		position:center;
+		position: flex;
 		top:20%;
 		right:5%;
 		transform: translate(5%,20%);
@@ -174,10 +174,11 @@
 
 	#mobile-menu.is-active .bar:nth-child(2){
 		opacity: 0;
+		
 	}
 
 	#mobile-menu.is-active .bar:nth-child(1){
-	transform: translateY(8px) rotate(45deg);
+		transform: translateY(8px) rotate(45deg);
 	}
 	#mobile-menu.is-active .bar:nth-child(3){
 		transform: translateY(-8px) rotate(-45deg);
