@@ -1,0 +1,13 @@
+{
+  "routes":[
+  {
+    "src":"/home.html",
+    "dest":"/home.html"
+  },
+  {
+    "src":"/projects.html",
+    "dest":"/projects.html"
+  },
+
+  ]
+}
