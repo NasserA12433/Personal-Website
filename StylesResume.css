@@ -98,7 +98,7 @@ body{
 }
 #timeline ul li:nth-child(even) .box{
 	left: -500px;
-	translate: translateX(-400%);
+	transform: translateX(-400%);
 }
 
 #timeline ul li .box.show{
@@ -154,16 +154,25 @@ body{
 		width:calc(100vw -90px);
 	}
 
-	#timeline ul li:nth-child(even) .box{
+	#timeline ul li .box{
 		left: 40px;
+		transform: translateX(400%);
 	}
-
-	#timeilne ul li:nth-child(even) .box:before{
-		left: -15px;
-		border-width: 8px 16px 8px 0px;
+	#timeline ul li .box:before{
+		left:-15px;
+		border-width: 8px 16px 8px 0;
 		border-color: transparent #18486e;
 	}
+	
+
+	#timeline ul li .box.show{
+		transform: translateX(0%);
+		transition: all 0.5s ease-in-out;
+	}
+
+
 }
+
 .navbar{
 	background: #000000;
 	height: 80px;
@@ -314,7 +323,7 @@ body{
 	}
 
 	#mobile-menu{
-		position:center;
+		position:flex;
 		top:20%;
 		right:5%;
 		transform: translate(5%,20%);
@@ -332,7 +341,7 @@ body{
 		height: 80px;
 		margin:0;
 	}
-	
+
 	.navbar__toggle .bar{
 		display:block;
 		cursor: pointer;
@@ -348,4 +357,13 @@ body{
 	#mobile-menu.is-active .bar:nth-child(3){
 		transform: translateY(-8px) rotate(-45deg);
 	}
+}
+
+.hyperlinks{
+	color: #fff;
+	justify-content: center;
+	display:flex;
+	gap:1rem;
+
+
 }
