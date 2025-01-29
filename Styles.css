@@ -116,13 +116,14 @@
 
 	.navbar__menu.active{
 		background:#000000;
+		width:100%;
 		top:100%;
 		opacity:1;
 		transition:all 0.5s ease;
 		z-index:99;
 		height: 50vh;
-		font-size:1.6rem;
-		position: flex;
+		font-size:1.3rem;
+		padding-left: 0%;
 	}
 	#navbar__logo{
 		padding-left:25px;
@@ -131,7 +132,7 @@
 	.navbar__toggle .bar{
 		width:25px;
 		height: 3px;
-		margin:5px auto;
+		margin:5px 20px;
 		transition: all 0.3s ease-in-out;
 		background: #fff;
 	}
@@ -152,10 +153,6 @@
 		top:20%;
 		right:5%;
 		transform: translate(5%,20%);
-	}
-
-	.navbar__btn {
-		padding-bottom: 2rem;
 	}
 
 	.button{
