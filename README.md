@@ -1,4 +1,4 @@
-Personal Wesbite
+# Personal Website
 ![image](https://github.com/user-attachments/assets/95436f7f-d718-4a2b-8778-d33d23c0fc34)
 Home page landing 
 ![image](https://github.com/user-attachments/assets/d8d1ecc8-9fb8-47c3-bba7-2a436947b82b)
